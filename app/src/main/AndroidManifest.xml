@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yaashvisoftware.materialdesignexamples">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MaterialTheme">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.RecyclerViewActivity" />
+        <activity android:name=".activities.CardViewActivity" />
+        <activity android:name=".activities.ShadowClippingActivity"
+            android:label="Shadow Clipping"/>
+        <activity android:name=".activities.AnimateVectorDrawablesActivity"
+            android:label="Animate Vector Drawable"/>
+        <activity android:name=".activities.AlternateLayoutActivity" />
+        <activity android:name=".activities.PalleteActivity"
+            android:label="Pallete Colors"/>
+        <activity android:name=".activities.FloatingActionButtonActivity"
+            android:label="Floating Action Button"/>
+        <activity android:name=".activities.NavigationDrawerActivity"
+            />
+        <activity android:name=".activities.animations.AnimationsActivity"
+            android:label="Animations"/>
+        <activity android:name=".activities.SnackBarActivity"
+            android:label="Snacbkar"/>
+        <activity android:name=".activities.CustomTouchFeedbackThroughRippleActivity"
+            android:label="Touch Ripple"/>
+        <activity android:name=".activities.RevealEffectActivity"
+            android:label="Reveal Effect"/>
+        <activity android:name=".activities.animations.TransitionClassSecondActivity"
+            android:label="Transition Class"/>
+        <activity
+            android:name=".activities.animations.TransitionUsingThemeActivity"
+            android:theme="@style/MaterialThemeWithTransition"
+            android:label="Transition Using Theme"/>
+        <activity android:name=".activities.animations.SharedElementActivity1"
+            android:label="Shared Element 1"/>
+        <activity android:name=".activities.animations.SharedElementFragmentsActivity"
+            android:label="Shared Element Fragments"/>
+        <activity android:name=".activities.animations.SharedElementActivity2"
+            android:label="Shared Element 2"></activity>
+    </application>
+
+</manifest>

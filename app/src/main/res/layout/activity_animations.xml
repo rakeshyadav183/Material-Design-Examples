@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btnCustomFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Feedback"/>
+
+            <!--Will work only in Api 21 and above-->
+            <Button
+                android:id="@+id/btnRevealEffect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reveal Effect"/>
+
+            <Button
+                android:id="@+id/btnActivityTransitionsExplode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transition Explode"/>
+
+            <Button
+                android:id="@+id/btnActivityTransitionsSlide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transition Slide" />
+
+            <Button
+                android:id="@+id/btnActivityTransitionsFade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transition Fade"/>
+
+            <Button
+                android:id="@+id/btnActivityTransitionsEnterReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transition Enter and Return"/>
+
+            <Button
+                android:id="@+id/btnActivityTransitionsTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transition Using Theme"/>
+
+            <Button
+                android:id="@+id/btnTransitionsSharedElementActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shared Element Activities"/>
+
+            <Button
+                android:id="@+id/btnTransitionsSharedElementFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shared Element Fragments"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

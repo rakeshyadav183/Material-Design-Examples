@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_animations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btnSimpleInBound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ripple Within Bounds"
+                android:background="?android:selectableItemBackground"/>
+
+            <!--Will work only in Api 21 and above-->
+            <Button
+                android:id="@+id/btnSimpleOutSideBound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ripple Outside Bounds"
+                android:background="?android:selectableItemBackgroundBorderless"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ripple For all Versions"
+                android:padding="20dp"
+                android:background="@drawable/ripple_for_all_version"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRipple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RippleDrawable Via Id Mask"
+                    android:background="@drawable/ripple_via_mask"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="@drawable/ripple_via_mask"
+                    android:clickable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checking Ripple effect in TextView"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:background="@drawable/ripple_via_mask"/>
+
+                <Button
+                    android:id="@+id/btnRippleThroughCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ripple through code"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ripple Over Drawable"
+                    android:textColor="@android:color/white"
+                    android:padding="20dp"
+                    android:clickable="true"
+                    android:background="@drawable/ripple_over_drawable"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

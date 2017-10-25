@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Material Design Examples</string>
+    <string name="activity_image_trans">activity_image_transition</string>
+    <string name="activity_text_trans">activity_text_transition</string>
+    <string name="activity_mixed_trans">activity_mixed_transition</string>
+    <string name="fragment_image_trans">fragment_image_transition</string>
+
+    <integer name="activity_trasition_duration">2500</integer>
+    <integer name="anim_duration_long">500</integer>
+</resources>
